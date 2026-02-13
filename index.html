@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para Nash ❤️</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+
+body{
+ font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+ background:linear-gradient(135deg,#ffd6eb,#ffc2e2,#ffadd8);
+ overflow:hidden;
+}
+
+.screen{
+ position:absolute;
+ inset:0;
+ display:none;
+ justify-content:center;
+ align-items:center;
+ text-align:center;
+ padding:30px;
+}
+
+.screen.active{display:flex}
+
+.card{
+ background:#ffc1dd;
+ border:1px solid rgba(255,255,255,0.6);
+ padding:40px;
+ border-radius:28px;
+ box-shadow:
+ 0 10px 30px rgba(255,20,147,0.15),
+ inset 0 1px 0 rgba(255,255,255,0.6);
+ max-width:700px;
+ width:100%;
+ backdrop-filter:blur(6px);
+}
+
+img{
+ max-width:100%;
+ border-radius:18px;
+ margin-top:15px;
+}
+
+h1,h2{
+ color:#c2187a;
+ margin-bottom:20px;
+}
+
+p{
+ color:#333;
+ font-size:17px;
+}
+
+button{
+ background:linear-gradient(180deg,#ff2da0,#ff1493);
+ color:white;
+ border:none;
+ padding:14px 28px;
+ border-radius:30px;
+ font-size:16px;
+ cursor:pointer;
+ margin-top:20px;
+}
+
+.memories{
+ display:grid;
+ grid-template-columns:repeat(2,1fr);
+ gap:15px;
+ margin-top:20px;
+}
+
+.memory img{
+ width:100%;
+ height:100%;
+ object-fit:cover;
+}
+
+#final{
+ background:radial-gradient(circle at bottom,#050510,#000);
+ color:white;
+ flex-direction:column;
+}
+
+.moon{
+ position:absolute;
+ top:60px;
+ right:80px;
+ width:140px;
+ height:140px;
+ border-radius:50%;
+ background:white;
+ box-shadow:0 0 60px white;
+}
+
+.star{
+ position:absolute;
+ background:white;
+ border-radius:50%;
+}
+
+#typeText{
+ margin-top:180px;
+ max-width:600px;
+ line-height:1.6;
+ white-space:pre-wrap;
+ font-size:19px;
+ color:#fff;
+}
+</style>
+</head>
+
+<body>
+
+<div class="screen active" id="step1">
+<div class="card">
+<h1>¡𝐹𝑒𝓁𝒾𝓏 𝒮𝒶𝓃 𝒱𝒶𝓁𝑒𝓃𝓉𝒾𝓃 𝒩𝒶𝓈𝒽! ❤️</h1>
+<img src="https://public.youware.com/users-website-assets/prod/dc0b63c4-fad2-4b40-a3f7-ccccc84fa74d/44f8e4f08a2342bea993471a3209bf2b.gif">
+<button onclick="nextStep()">Siguiente</button>
+</div>
+</div>
+
+<div class="screen" id="step2">
+<div class="card">
+<h2>𝒩𝓊𝑒𝓈𝓉𝓇𝑜𝓈 𝓇𝑒𝒸𝓊𝑒𝓇𝒹𝒾𝓉𝑜𝓈 📸</h2>
+<div class="memories">
+<div class="memory"><img src="https://i.postimg.cc/bwpjMc9J/1.webp"></div>
+<div class="memory"><img src="https://i.postimg.cc/pVz4tcTK/2.webp"></div>
+<div class="memory"><img src="https://i.postimg.cc/brh6J8JS/3.png"></div>
+<div class="memory"><img src="https://via.placeholder.com/400x400.png"></div>
+</div>
+<button onclick="nextStep()">Siguiente</button>
+</div>
+</div>
+
+<div class="screen" id="step3">
+<div class="card">
+<h2>𝒰𝓃𝒶 𝒸𝒶𝓃𝒸𝒾ó𝓃 𝓈𝑜𝓁𝑜 𝓅𝒶𝓇𝒶 𝓋𝑜𝓈 🎵</h2>
+<iframe width="100%" height="200" src="https://www.youtube.com/embed/wIuBcb2T55Q"></iframe>
+<button onclick="nextStep()">Siguiente</button>
+</div>
+</div>
+
+<div class="screen" id="step4">
+<div class="card">
+<h2>𝒯𝑒 𝑒𝓈𝒸𝓇𝒾𝒷í 𝓊𝓃𝒶 𝒸𝒶𝓇𝓉𝒶 💌</h2>
+<button onclick="nextStep()">Abrir carta</button>
+</div>
+</div>
+
+<div class="screen" id="step5">
+<div class="card">
+<h2>𝒫𝒶𝓇𝒶 𝒩𝒶𝓈𝒽 ❤️</h2>
+
+<p style="text-align:left">
+
+Mi querida Nash,
+
+Este San Valentín quiero que sepas que ocupás un lugar muy importante en mi corazón.
+
+Me importa lo que sentís, lo que pensás y lo que sos, incluso cuando no lo decís.
+
+Desde que apareciste, muchas cosas cambiaron sin que me diera cuenta.
+
+Las canciones suenan distinto, los días pesan menos y los momentos simples se volvieron especiales solo por compartirlos con vos.
+
+Gracias por estar, por quedarte y por tu forma tan linda de querer.
+
+Ojalá podamos seguir eligiéndonos, cuidándonos y construyendo recuerdos juntos.
+
+Te quiero más de lo que a veces sé decir con palabras.
+
+</p>
+
+<button onclick="nextStep()">Continuar</button>
+
+</div>
+</div>
+
+<div class="screen" id="final">
+
+<div class="moon"></div>
+
+<div id="typeText"></div>
+
+<audio id="finalAudio">
+<source src="nash.mp3" type="audio/mpeg">
+</audio>
+
+</div>
+
+<script>
+
+let current=1;
+
+function nextStep(){
+
+document.getElementById("step"+current)?.classList.remove("active");
+
+current++;
+
+if(current<=5){
+
+document.getElementById("step"+current).classList.add("active");
+
+}else{
+
+document.getElementById("final").classList.add("active");
+
+startFinal();
+
+}
+
+}
+
+function startFinal(){
+
+for(let i=0;i<80;i++){
+
+let star=document.createElement("div");
+
+star.className="star";
+
+star.style.width=Math.random()*3+"px";
+
+star.style.height=star.style.width;
+
+star.style.left=Math.random()*100+"vw";
+
+star.style.top=Math.random()*100+"vh";
+
+document.getElementById("final").appendChild(star);
+
+}
+
+const text=`Y si tuviera la posibilidad de volver a enamorarme de ti como aquella primera vez lo haría sin pensarlo dos veces
+
+lo haría con la misma certeza
+
+porque hay cosas en la vida que no se explican
+
+solo se sienten
+
+y lo nuestro fue eso
+
+una casualidad vestida de eternidad`;
+
+let i=0;
+
+const audio=document.getElementById("finalAudio");
+
+function type(){
+
+if(i===0){
+
+audio.currentTime=0;
+
+audio.play();
+
+}
+
+if(i<text.length){
+
+document.getElementById("typeText").innerHTML+=text.charAt(i);
+
+i++;
+
+setTimeout(type,40);
+
+}
+
+}
+
+type();
+
+}
+
+</script>
+
+</body>
+</html>
